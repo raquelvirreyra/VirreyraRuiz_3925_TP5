@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ayelén Raquel Virreyra Ruiz">
+	<title>Liga de fútbol profesional</title>
+	<link rel="icon" href="img/icono.jpg">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" media="">
+</head>
+<body>
+	<header>
+		<div class="oscurecer">
+		<img src="img/encabezado.jpg" width="1366" height="180">
+		<div id="logo">
+			<h1><i>Liga de Fútbol Profesional</i></h1>
+		</div>
+		</div>
+	</header>
+
+	<nav>
+        <ul>
+        	<li class="botones"><a href="index.html">Inicio</a></li>
+            <li class="botones"><a href="fixture.html">Fixture y Resultados</a></li>
+            <li class="botones"> <a href="equipos.html">Equipos</a></li>
+        </ul>
+        <div id="welcome">
+            <h4 th:text="'Bienvenido! '+ ${usuario}"></h4>
+        </div>
+    </nav>
+
+    <section>
+		<div id="scroll">
+			<div id="titulo">
+			    <h2>Noticias</h2>
+		    </div>
+		    <article id="contenido">
+		    	<ul>
+		    		<li>
+		    			<img src="img/caja1.jpg" width="333">
+		    			<br><b>Lunes 11 de Mayo de 2020</b>
+		    			<br></br>
+		    			<p>El gobierno del Reino Unido autorizó la vuelta del fútbol en su territorio luego de una interrupción de casi dos meses a raíz de la pandemia de coronavirus. De esta manera, la Premier League y el resto de las competiciones podrían reanudar sus actividades a partir del próximo 1° de junio.</p>
+		    		</li>
+        		    <li>
+		    			<img src="img/caja2.jpg" width="333" height="170">
+		    			<br><b>Lunes 11 de Mayo de 2020</b>
+		    			<br></br>
+		    			<p>El presidente de La Liga, Javier Tebas, espera que el fútbol español se reanude el 12 de junio después de estar tres meses paralizado debido a la pandemia de coronavirus.</p>
+        		    </li>
+        		    <li>
+        		    	<img src="img/caja3.jpg" width="333" height="170">
+		    			<br><b>Viernes 8 de Mayo de 2020</b>
+		    			<br></br>
+		    			<p>El exfutbolista Tomás Felipe 'el Trinche' Carlovich, que es considerado por algunas leyendas del fútbol como uno de los mejores jugadores argentinos de la historia, falleció a los 74 años tras no recuperarse del asalto que sufrió en la céntrica provincia de Santa Fe.</p>
+        		    </li>
+        	    </ul>
+            </article>
+        </div>
+        <aside id="der">
+        	<div id="auspiciantes">
+        		<h2>Auspiciantes</h2>
+        		<ul>
+        			<li><img src="img/logo1.png" height="67"></li>
+        			<li><img src="img/logo2.png" height="42" width="150"></li>
+        			<li><img src="img/logo3.png" height="67"></li>
+        			<li><img src="img/logo4.png" height="50" width="150"></li>
+        		</ul>
+        	</div>
+        </aside>
+    </section>
+
+    <footer><img src="img/footer.jpg" width="1366" height="90">
+    	<div class="pie-r">
+    		<div id="redes">
+    			<ul>
+    				<li><a href="https://www.facebook.com/AFAOFICIAL/" target="_black"><img src="img/red1.png" width="25" height="25"></a></li>
+    				<li><a href="https://www.instagram.com/afa.oficial/" target="_black"><img src="img/red2.png" width="25" height="25"></a></li>
+    				<li><a href="https://twitter.com/afa?lang=es" target="_black"><img src="img/red3.png" width="25" height="25"></a></li>
+    			</ul>
+    		</div>
+    	</div>
+
+    	<div class="pie-c">
+    		<p><b>Avda. Pedro Ortiz de Zárate N°455 - Tel 388 4789555.</b></p>
+    		<b>&copy;Todos los Derechos Reservados.</b>
+    	</div>
+    </footer>
+
+</body>
+</html>
